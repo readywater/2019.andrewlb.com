@@ -1,4 +1,6 @@
-# 2019 AndrewLB com
+# 2019.andrewLB.com
+
+Quick fork and modification of the (Lora Theme)[https://github.com/nandomoreirame/lora]
 
 > :warning:
 

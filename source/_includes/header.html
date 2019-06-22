@@ -5,9 +5,19 @@
     <a href="{{ "/" | prepend: site.baseurl }}" class="author-thumb">
       <img src="{{ "/images/author.jpg" | prepend: site.baseurl }}" alt="Author thumbnail" class="dot">
     </a>
+    <ul class="social">
+      {% for item in site.social %} {% for i in item %}
+      <li>
+        <a href="{{ i.link }}" target="_blank"
+          ><i class="icon icon-{{ i.slug }}"></i
+        ></a>
+      </li>
+      {% endfor %} {% endfor %}
+    </ul>
+
     <h1>I'm Andrew Lovett-Barron <small>and I make software products.</small></h1>
      <hr class="hr">
-      <h2>I've made</h2>
+      <h2>Things I've Made</h2>
       <ul>
         <li>
           <p>
@@ -43,11 +53,11 @@
         </li>
       </ul>
     <hr class="hr">
-      <h2>I have worked at</h2>
+      <h2>Roles I've Held</h2>
       <ul>
         <li>
           <h3>
-            Principal Designer, Team Lead
+            Principal Designer, Project Lead
           </h3>
           <p>
           <img src="{{ "/images/ideo.png" | prepend: site.baseurl }}" alt="IDEO" class="dot">
@@ -77,12 +87,6 @@
         </li>
       </ul>
 
-
-
-
-    <!-- <a class="btn" href="http://netgrant.org" target="_blank">Grant Calculator</a> -->
-    <!-- <a class="btn" href="https://pedalpedal.club" target="_blank">Pedal Pedal Club</a> -->
-    <!-- <a class="btn" href="https://vimeo.com/80308354" target="_blank">Stoke</a> -->
     <hr class="hr">
 
   </div>
