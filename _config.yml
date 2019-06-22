@@ -1,0 +1,31 @@
+permalink: /:categories/:year/:title/
+markdown: kramdown
+highlighter: pygments
+
+paginate: 2 #6
+comments: true
+paginate_path: "/page/:num"
+
+source: source
+destination: _site
+sass:
+  sass_dir: _scss
+  style: compressed
+
+# Site settings
+title: Andrew Lovett-Barron
+description: "Design"
+email: alb@andrewlb.com
+baseurl: "" # the subpath of your site, e.g. /blog/
+#url: "http://yourdomain.com"
+# social footer
+social:
+  github:
+    slug: github
+    link: http://github.com/readywater
+  twitter:
+    slug: twitter
+    link: http://twitter.com/readywater
+  linkedin:
+    slug: linkedin
+    link: http://linkedin.com/in/andrewlb
