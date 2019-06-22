@@ -20,6 +20,9 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 #url: "http://yourdomain.com"
 # social footer
 social:
+  email:
+    slug: star
+    link: mailto:alb@andrewlb.com
   github:
     slug: github
     link: http://github.com/readywater

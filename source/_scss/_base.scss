@@ -27,7 +27,7 @@ body {
   background: $bg-color;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  letter-spacing: .01em;
+  letter-spacing: 0.01em;
 }
 
 body,
@@ -46,7 +46,7 @@ a {
   text-decoration: underline;
 
   &:hover {
-    transition: color .2s linear;
+    transition: color 0.2s linear;
     text-decoration: none;
     color: $link-hover-color;
   }
@@ -62,11 +62,14 @@ em {
 
 p {
   margin: 0 0 1em 0;
+  b {
+    text-decoration: underline;
+  }
 }
 
 img {
   display: block;
-  margin: 0 0 .6em;
+  margin: 0 0 0.6em;
   vertical-align: middle;
   max-width: 100%;
 }
@@ -93,10 +96,16 @@ h6 {
 
 h1 {
   font-size: 2.2rem;
+  @media (max-width: 500px) {
+    font-size: 1.8rem;
+  }
 }
 
 h2 {
   font-size: 1.8rem;
+  @media (max-width: 500px) {
+    font-size: 1.6rem;
+  }
 }
 
 h3 {
@@ -112,7 +121,7 @@ h5 {
 }
 
 h6 {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 sub {
@@ -144,7 +153,8 @@ blockquote {
   padding: 0.5em 0 0.5em 2em;
 }
 
-q, blockquote {
+q,
+blockquote {
   small {
     font-size: 60%;
   }
@@ -171,7 +181,6 @@ code {
   padding: 0 5px;
   background-color: #dedede;
 }
-
 
 pre {
   -webkit-overflow-scrolling: touch;

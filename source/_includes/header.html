@@ -5,17 +5,13 @@
     <a href="{{ "/" | prepend: site.baseurl }}" class="author-thumb">
       <img src="{{ "/images/author.jpg" | prepend: site.baseurl }}" alt="Author thumbnail" class="dot">
     </a>
-    <ul class="social">
-      {% for item in site.social %} {% for i in item %}
-      <li>
-        <a href="{{ i.link }}" target="_blank"
-          ><i class="icon icon-{{ i.slug }}"></i
-        ></a>
-      </li>
-      {% endfor %} {% endfor %}
-    </ul>
 
-    <h1>I'm Andrew Lovett-Barron <small>and I make software products.</small></h1>
+
+    <h1><small>Hello! My name is</small>Andrew Lovett-Barron<small> and I make software products.</small></h1>
+    <p>For the past decade, I've contributed to awesome software product. <br/>This look that <b>leading field research at IDEO</b>, getting into the weeds with <b>agile teams at the Dept of Defense</b> to improve delivery and quality, <b>teaching product workshops to the Innofounder startups</b> in Denmark, and <b>building my own products</b> as an indie dev.
+    </p>
+    <p>Interested in a collaboration?<p>
+    <a href="mailto:alb@andrewlb.com" class="btn">Let's chat</a>
      <hr class="hr">
       <h2>Things I've Made</h2>
       <ul>
@@ -32,21 +28,27 @@
         </li>
         <li>
           <p>
+          <a href="http://netgrant.org/" target="_blank">
           <img src="{{ "/images/grantcalc.png" | prepend: site.baseurl }}" alt="Grant Calculator" class="dot">
+          </a>
           </p>
           <h3>Grant Calculator</h3>
           <p>A collaboration with Dahna Goldstein to support non-profit decision making</p>
         </li>
         <li>
           <p>
+          <a href="https://pedalpedal.club/" target="_blank">
             <img src="{{ "/images/pedalpedal.jpg" | prepend: site.baseurl }}" alt="Pedal Pedal Club" class="dot">
+            </a>
           </p>
           <h3>Pedal Pedal Club</h3>
           <p>Reward yourself (and control your spending) as a new cyclist</p>
         </li>
         <li>
            <p>
+           <a href="https://vimeo.com/80308354" target="_blank">
             <img src="{{ "/images/stoke.jpg" | prepend: site.baseurl }}" alt="Stoke" class="dot">
+            </a>
           </p>
           <h3>Stoke</h3>
           <p>A large scale interactive installation for Nuit Blanche 2013</p>
@@ -57,16 +59,16 @@
       <ul>
         <li>
           <h3>
-            Principal Designer, Project Lead
+            Principal Designer
           </h3>
           <p>
-          <img src="{{ "/images/ideo.png" | prepend: site.baseurl }}" alt="IDEO" class="dot">
+            <img src="{{ "/images/ideo.png" | prepend: site.baseurl }}" alt="IDEO" class="dot">
           </p>
         </li>
         <li>
           <h3>Digital Service Expert</h3>
           <p>
-          <img src="{{ "/images/dds.png" | prepend: site.baseurl }}" alt="Defense Digital Service" class="dot">
+            <img src="{{ "/images/dds.png" | prepend: site.baseurl }}" alt="Defense Digital Service" class="dot">
           </p>
         </li>
         <li>
@@ -86,9 +88,18 @@
         <p><img src="{{ "/images/innofounder.png" | prepend: site.baseurl }}" alt="Innofounder" class="dot"></p>
         </li>
       </ul>
-
-    <hr class="hr">
+            <small><a href="http://www.linkedin.com/in/andrewlb" target="_blank">Full CV on Linkedin</a></small>
 
   </div>
-
+ <ul class="social">
+      {% for item in site.social %}
+        {% for i in item %}
+        <li>
+          <a href="{{ i.link }}" target="_blank"
+            ><i class="icon icon-{{ i.slug }}"></i
+          ></a>
+        </li>
+        {% endfor %}
+      {% endfor %}
+    </ul>
 </header>
