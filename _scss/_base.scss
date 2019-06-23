@@ -62,6 +62,8 @@ em {
 
 p {
   margin: 0 0 1em 0;
+  widows: 3;
+  orphans: 3;
   b {
     font-weight: 600;
   }
