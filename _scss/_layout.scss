@@ -118,6 +118,9 @@
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
+        &.image {
+          margin: 0;
+        }
         small {
           display: block;
           width: 100%;
