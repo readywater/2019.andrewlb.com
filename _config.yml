@@ -17,7 +17,7 @@ title: Andrew Lovett-Barron
 description: "Making things"
 email: alb@andrewlb.com
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "httpw://2019.andrewlb.com"
+url: "https://andrewlb.com"
 # social footer
 social:
   email:
