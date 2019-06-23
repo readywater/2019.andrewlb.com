@@ -16,8 +16,8 @@ sass:
 title: Andrew Lovett-Barron
 description: "Making things"
 email: alb@andrewlb.com
-baseurl: "" # the subpath of your site, e.g. /blog/
-#url: "http://yourdomain.com"
+baseurl: "/2019.andrewlb.com/" # the subpath of your site, e.g. /blog/
+# url: "http://yourdomain.com"
 # social footer
 social:
   email:
