@@ -18,6 +18,8 @@ description: "Making things"
 email: alb@andrewlb.com
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://andrewlb.com"
+
+google_analytics: UA-11256323-1
 # social footer
 social:
   email:
