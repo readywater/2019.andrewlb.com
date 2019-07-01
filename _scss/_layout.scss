@@ -125,7 +125,7 @@
         small {
           display: block;
           width: 100%;
-          font-size: .8rem;
+          font-size: 0.8rem;
         }
       }
       img {
@@ -139,7 +139,7 @@
 }
 
 .author-thumb {
-  opacity: 0.7;
+  opacity: 0.9;
   display: inline-block;
   transition: opacity 0.2s ease;
 
@@ -152,7 +152,7 @@
   &:hover,
   &:focus,
   &:active {
-    opacity: 0.9;
+    opacity: 0.7;
   }
 }
 
